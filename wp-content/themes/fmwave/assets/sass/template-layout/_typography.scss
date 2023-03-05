@@ -1,0 +1,92 @@
+body {
+    font-family: $body_font;
+    font-size: rem(16px);
+    line-height: rem(30px);
+    color: $color_body;
+    font-weight: 400;
+    height: 100%;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #ffffff;
+}
+
+p {
+    margin: rem(0 0 20px 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading_font;
+    margin: rem(0 0 20px 0);
+    font-weight: 600;
+    line-height: rem(40px);
+    color: $color_title;
+}
+
+h1 {
+    font-size: rem(46px);
+}
+h2 {
+    font-size: rem(36px);
+    @media only screen and (max-width: 767px) {
+        font-size: rem(42px);
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: rem(36px) !important; 
+    }
+}
+h2 {
+    font-size: rem(36px);
+    @media only screen and (max-width: 991px) {
+        font-size: rem(32px);
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: rem(30px) !important; 
+    }
+}
+
+h3 {
+    font-size: rem(28px);
+    @media only screen and (max-width: 767px) {
+        font-size: rem(24px);
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: rem(22px) !important; 
+    }
+}
+
+h4 {
+    font-size: rem(22px);
+    @media only screen and (max-width: 767px) {
+        font-size: rem(20px);
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: rem(18px) !important; 
+    }
+}
+
+h5 {
+    font-size: rem(18px);
+    @media only screen and (max-width: 767px) {
+        font-size: rem(17px);
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: rem(16px) !important; 
+    }
+}
+
+h6 {
+    font-size: rem(16px);
+    @media only screen and (max-width: 767px) {
+        font-size: rem(15px);
+    }
+     @media only screen and (max-width: 767px) {
+        font-size: rem(14px);
+    }
+}

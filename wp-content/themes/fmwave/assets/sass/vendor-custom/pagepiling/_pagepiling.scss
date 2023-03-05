@@ -1,0 +1,105 @@
+/*------------------- 3.2 PagePiling -------------------*/
+.menu-anchor {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 15;
+	list-style: none;
+	@media only screen and (max-width: 991px) {
+		display: none; 
+	}
+	li {
+		margin-bottom: rem(8px);
+		padding-left: rem(145px);
+		position: relative;
+		@media only screen and (max-width: 1199px) {
+			padding-left: rem(100px);
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:before {
+			content: "";
+			height: rem(1px);
+			width: rem(30px);
+			background-color: $color_light;
+			position: absolute;
+			top: 45%;
+			transform: translateY(-50%);
+			right: 45%;
+			transition: all .6s ease-in-out;
+			@media only screen and (max-width: 1199px) {
+				right: 55%;
+			}
+		}
+		a {
+			font-size: rem(20px);
+			color: #c3c3c3;
+			padding: rem(5px);
+		}
+		&:hover {
+			a {
+				color: $color_light;
+			}
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+	li.active {
+		&:before {
+			width: 100%
+		}
+		a {
+			padding-left: rem(10px);
+			color: $color_light;
+		}
+	}
+}
+
+.pp-menu-number {
+	text-align: center;
+	li {
+		display: inline-block;
+		position: relative;
+		&:after {
+			content: ".";
+			color: #c3c3c3;
+			padding: rem(0 12px 0 18px);
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+		a {
+			color: #c3c3c3;
+
+		}
+	}
+	li.active {
+		a {
+			font-size: rem(22px);
+			font-weight: 600;
+			color: $color_light;
+		}
+	}
+
+}
+.pp-content.active { 
+	.item-subtitle {
+		margin: 0 0.5rem;
+		animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+		animation-duration: .8s; /* don't forget to set a duration! */
+	}
+	.item-title {
+		margin: 0 0.5rem;
+		animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+		animation-duration: 1.2s; /* don't forget to set a duration! */
+	}
+}
+
+#pp-nav {
+	display: none;
+}

@@ -1,0 +1,57 @@
+.about-img {
+	position: relative;
+	@media only screen and (max-width: 1199px) {
+		text-align: center;
+	}
+	img {
+		border-radius: rem(3px);
+	}
+	.video-icon {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+		.play-btn {
+			position: relative;
+			text-align: center;
+			height: rem(92px);
+			width: rem(92px);
+			background-color: rgba(255, 255, 255, 0.25);
+			border-radius: 50%;
+			font-size: rem(22px);
+			color: $color_primary;
+			margin: 0 auto;
+			@media only screen and (max-width: 767px) {
+				height: rem(80px);
+				width: rem(80px);
+				font-size: rem(20px);
+			}
+			&:before {
+				content: "";
+				height: rem(72px);
+				width: rem(72px);
+				background-color: rgba(255, 255, 255, 1);
+				border-radius: 50%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				z-index: -1;
+				animation: pulse 1.5s infinite;
+				@media only screen and (max-width: 767px) {
+					height: rem(60px);
+					width: rem(60px);
+				}
+			}
+			i {
+				position: absolute;
+				top: 50%;
+				left: 53%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+		}
+	}
+}

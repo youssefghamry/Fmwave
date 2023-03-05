@@ -1,0 +1,157 @@
+/*------------------- 4.11 Section -------------------*/
+.section-defauly-style.left {
+	.section-subtitle {
+		margin-right: auto;
+	}
+}
+.section-defauly-style.center {
+	.section-subtitle {
+		margin: 0 auto;
+	}
+}
+.section-defauly-style.right {
+	.section-subtitle {
+		margin-left: auto;
+	}
+}
+.section-heading-1 {
+	text-align: center;
+	margin-bottom: rem(8px);
+	margin-left: rem(40px);
+	position: relative;
+	.heading-wrap {
+		display: inline-block;
+		position: relative;
+		.heading-title {
+			font-weight: 700;
+		}
+	}
+}
+.section-heading-md {
+	text-align: left;
+	margin-left: rem(40px);
+	margin-bottom: rem(12px);
+	.heading-wrap {
+		.heading-title {
+			font-size: rem(24px);
+		}
+	}
+}
+.standard-heading {
+	text-align: center;
+	margin-bottom: rem(50px);
+	.heading-title {
+		font-weight: 300;
+		color: $color_light;
+	}
+	p {
+		color: $color_light;
+		width: 60%;
+		margin: rem(0 auto);
+	}
+}
+.section-heading-1.heading-light {
+	.heading-wrap {
+		.heading-title {
+			color: $color_light;
+		}
+		.singnal-symbol {
+			.item-circle {
+				border-color: $color_light;
+			}
+		}
+	}
+}
+.standard-heading {
+	text-align: center;
+	margin-bottom: rem(50px);
+	.heading-title {
+		font-weight: 300;
+		color: $color_light;
+	}
+	p {
+		color: #cccccc;
+		width: 60%;
+		margin: rem(0 auto);
+		@media only screen and (max-width: 1199px) {
+			width: 80%;
+		}
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+		}
+	}
+}
+.modern-heading {
+	text-align: center;
+	padding-bottom: rem(26px);
+	position: relative;
+	&:after {
+		content: "";
+		height: rem(7px);
+		width: rem(50px);
+		background-color: $color_primary;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+	}
+	.heading-title {
+		font-weight: 700;
+		margin-bottom: rem(14px);
+	}
+	p {
+		color: #525151;
+		margin: rem(0 auto);
+	}
+}
+
+.singnal-symbol {
+	$size: 30px;
+	display: block;
+	position: absolute;
+	top: rem(-80px);
+	left: rem(-50px);
+	width: $size;
+	height: $size;
+	margin-top: 0 - $size - $size*0.25;
+	transform: rotate(-95deg) translate(-100px);
+	.item-circle {
+		display: block;
+		width: 100%;
+		height: 100%;
+		font-size: $size/10;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		border-color: $color_primary;
+		border-style: solid;
+		border-width: 1em 1em 0 0 ;
+		border-radius: 0 100% 0 0;
+		opacity: 0;
+		animation: signalanimation 2s infinite;
+
+		&.circle-1 {
+			animation-delay: 800ms;
+		}
+		&.circle-2 {
+			width: 6.5em;
+			height: 6.5em;
+			animation-delay: 400ms;
+		}
+		&.circle-3 {
+			width: 3em;
+			height: 3em;
+			animation-delay: 0ms;
+		}
+	}
+}
+
+@keyframes signalanimation {
+	0% { 
+		opacity: 1;
+	}
+	100% { 
+		opacity: 0.1; 
+	}
+}

@@ -1,0 +1,70 @@
+/*------------------- 5.13 Progress -------------------*/
+.progress-circle-section {
+	padding: rem(120px 0 80px);
+	position: relative;
+	@media only screen and (max-width: 991px) {
+		padding: rem(100px 0 60px);
+		 
+	}
+	&:before {
+		content: "";
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.50);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+.progress-box {
+	text-align: center;
+	margin-bottom: rem(30px);
+	display: inline-block;
+	width: 100%;
+	.pie-chart-percent {
+		width: 100%;
+		position: absolute;
+		margin-bottom: rem(15px);
+		span,
+		sup {
+			font-size: rem(36px);
+			font-weight: 600;
+			color: $color_light;
+		}
+		sup {
+			top: auto;
+    		left: -3px;
+		}
+	}
+	.item-title {
+		font-size: rem(22px);
+		font-weight: 600;
+		color: $color_light;
+		margin-bottom: 0;
+		letter-spacing: rem(2px);
+	}
+	canvas {
+	    top: 0;
+	    left: 50%;
+	    position: absolute;
+	    transform: translateX(-50%);
+	}
+}
+
+.progress-circle-section.circle-dark {
+	&:before {
+		background-color: $color_light;
+	}
+	.progress-box {
+		.item-title {
+			color: $color_title;
+		}
+		.circle-progress {
+			span {
+				color: #bababa;
+			}
+		}
+	}
+}

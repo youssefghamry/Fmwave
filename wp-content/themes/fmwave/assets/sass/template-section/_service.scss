@@ -1,0 +1,122 @@
+/*------------------- 5.14 Service -------------------*/
+.video-v2 {
+	.item-video {
+		position: relative;
+		text-align: center;
+		.popup-video {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			transform: translateY(-50%);
+
+			.play-btn {
+				height: rem(93px);
+				width: rem(93px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: $color_light;
+				border-radius: 50%;
+				font-size: rem(26px);
+				color: $color_body;
+				margin: 0 auto;
+				animation: pulse 1000ms infinite;
+				i {
+					margin-left: rem(7px);
+				}
+				&:hover {
+					color: $color_black;
+				}
+				@media only screen and (max-width: 991px) {
+					height: rem(80px); 
+					width: rem(80px); 
+					font-size: rem(24px);
+				}
+				@media only screen and (max-width: 767px) {
+					height: rem(60px); 
+					width: rem(60px); 
+					font-size: rem(22px);
+				}
+			}
+		}
+	}
+}
+
+.service-offer {
+	.service-box {
+		position: relative;
+		background-color: $color_light;
+		padding: rem(45px 40px 30px);
+		@media only screen and (max-width: 575px) {
+			padding: rem(40px 20px 20px);
+		}
+		.item-sl {
+			color: rgba(102, 102, 102, 0.08);	
+			font-size: rem(140px);
+			line-height: 1;
+			font-weight: 600;
+			position: absolute;
+			bottom: rem(-20px);
+			right: rem(30px);
+			@media only screen and (max-width: 575px) {
+				font-size: rem(100px);
+				bottom: 0;
+				right: 0;
+			}
+		}
+		&:hover {
+			.media {
+				.item-icon {
+					border-color: $color_black;
+					i {
+						&:before {
+							color: $color_black;
+
+						}
+					}
+				}
+			}
+		}
+	}
+	.media {
+		@media only screen and (max-width: 575px) {
+			display: block; 
+			text-align: center;
+		}
+		.item-icon {
+			text-align: center;
+			height: rem(80px);
+			width: rem(80px);
+			border: rem(1px) solid #bcbcbc;
+			border-radius: 50%;
+			margin-right: rem(20px);
+			margin-top: rem(4px);
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+			transition: all 0.3s ease-in-out;
+			@media only screen and (max-width: 575px) {
+				margin-right: 0;
+				margin-top: 0;
+				margin: rem(0 auto 20px);
+			}
+			i {
+				&:before {
+					color: #bcbcbc;
+					font-size: rem(36px);
+					transition: all 0.3s ease-in-out;
+				}
+			}
+			i.flaticon-film {
+				height: 25px;
+			}
+		}
+		.media-body {
+			.item-title {
+				margin-bottom: rem(4px);
+				font-size: rem(22px);
+			}
+		}
+	}
+}

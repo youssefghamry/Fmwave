@@ -1,0 +1,99 @@
+/*------------------- 4.3 Button -------------------*/
+.btn-line {
+	font-weight: 600;
+	color: $color_body;
+	padding: rem(5px 5px 4px 30px);
+	position: relative;
+	text-transform: uppercase;
+	span {
+		display: inline-block;
+		transition: all 0.3s ease-in-out;
+	}
+	&:before {
+		content: "";
+		height: rem(2px);
+		width: rem(20px);
+		background-color: $color_body;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover {
+		color: $color_black;
+		span {
+			transform: translateX(10px);
+		}
+		&:before {
+			transition-delay: 0.3s;
+			left: rem(10px);
+			background-color: $color_black;
+		}
+	}
+}
+.hero-slider-section {
+	.btn-line {
+		color: $color_light;
+		&:before {
+			background-color: $color_light;
+		}
+		&:hover {
+			color: #cccccc;
+				&:before {
+				background-color: #cccccc;
+			}
+		}
+	}
+}
+.btn-fill-lg {
+	background-color: $color_title;
+	color: $color_light !important;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: rem(16px 34px 14px);
+	@media only screen and (max-width: 991px) {
+		padding: rem(12px 30px 10px);
+	}
+	&:hover {
+		color: $color_light;
+		background-color: $color_black;
+	}
+}
+.btn-fill-md {
+	background-color: $color_title;
+	color: $color_light;
+	font-weight: 600;
+	padding: rem(12px 38px 7px);
+	&:hover {
+		color: $color_light;
+		background-color: $color_black;
+	}
+}
+.persephone.tparrows {
+	border-radius: 100% !important;
+    transition: all .3s linear;
+}
+@media only screen and (max-width: 991px) {
+	rs-arrow.tp-rightarrow.tparrows.persephone {
+		transform: translate(-100px, -110px) !important;
+	}
+	rs-arrow.tp-leftarrow.tparrows.persephone {
+		transform: translate(-160px, -110px) !important;
+	}
+}
+.border-btn {
+	.item-btn {
+	    margin-top: 1.875rem;
+	    font-weight: 600;
+	    color: #666666;
+	    text-transform: uppercase;
+	    border: 0.125rem solid #ececec;
+	    padding: 0.625rem 1.625rem 0.4375rem;
+	    &:hover {
+		    background-color: #343434;
+		    border-color: #343434;
+		    color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+/*------------------- 3.3 Slick -------------------*/
+.slick-slider {
+	.slick-slide {
+		margin-left: rem(20px);
+		margin-right: rem(20px);
+		&:focus {
+			outline: none;
+		}
+	}
+	button.slick-arrow,
+	span.slick-arrow {
+	    color: #fff;
+	    margin-left: 40px;
+	    padding: 10px 25px;
+	    background-color: #000;
+	}
+}
+.slick-album2 {
+	.slick-slider {
+		.slick-slide {
+			margin-left: rem(20px);
+			margin-right: rem(20px);
+		}
+	}
+}
+.slick-album2,
+.slick-album {
+	.slick-dots {
+	    top: 50%;
+	    right: 10px;
+	    list-style: none;
+	    text-align: center;
+	    margin-top: 30px;
+	    margin-bottom: 0;
+	    padding: 0;
+	    @media only screen and (max-width: 1600px) {
+			right: -30px;
+		}
+		@media only screen and (max-width: 1200px) {
+			right: 60px;
+		}
+	    li {
+		    position: relative;
+		    display: inline-block;
+		    width: 10px;
+		    height: 10px;
+		    margin: 0 5px;
+		    padding: 0;
+		    cursor: pointer;
+		    border-radius: 100%;
+		    button {
+			    font-size: 0;
+			    line-height: 20;
+			    display: inline;
+			    width: 10px;
+			    height: 10px;
+			    padding: 5px;
+			    cursor: pointer;
+			    color: transparent;
+			    border: 0;
+			    border-radius: 100%;
+			    outline: none;
+			    background-color: rgba(0, 0, 0, 0.25);
+		    }
+		    &.slick-active {
+		    	button {
+		    		background-color: #000;
+		    	}
+		    }
+		}
+	}
+	button.slick-arrow {
+		right: 0;
+		bottom: 0;
+		z-index: 9;
+		position: absolute;
+		&:focus {
+			outline: none;
+			border-radius: 0;
+		}
+	}
+	button.slick-prev {
+		right: 80px;
+	}
+}
+.slick-album2 {
+	button.slick-prev {
+		right: auto;
+		left: 0;
+	}
+}

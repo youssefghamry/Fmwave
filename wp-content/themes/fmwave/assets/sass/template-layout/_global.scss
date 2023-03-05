@@ -1,0 +1,92 @@
+/*------------------- 4.6 Global -------------------*/
+body {
+    overflow-x: hidden;
+}
+html {
+    margin-top: 0 !important;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+a:active,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: $color_black;
+    outline: 0 none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: disc inside none;
+    margin: 0 0 20px 0;
+    padding: 0 0 0 20px;
+}
+
+hr {
+    margin: rem(30px 0 0);
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    margin-left: 0;
+}
+
+.item-icon {
+    line-height: 1;
+    i {
+        display: inline-block;
+    }
+}
+
+.form-response {
+
+    .alert-danger,
+    .alert.alert-info,
+    .alert.alert-success {
+        margin-top: rem(10px);
+        margin-bottom: 0;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.bg-aash {
+    background-color: #fafafa;
+}
+
+.bg-common {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-size-cover {
+    background-size: cover;
+}
+
+.bg-attachment-fixed {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.border-top-aash {
+    border-top: rem(1px) solid #d1d0d0;
+}
+
+.content-area {
+    padding: 6.25rem 0;
+}

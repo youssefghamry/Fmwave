@@ -1,0 +1,53 @@
+/*------------------- 4.4 Custom Cursor -------------------*/
+.custom-cursor {
+	.circle-cursor {
+		position: fixed;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+		border-radius: 50%;
+		transform: translateZ(0);
+		visibility: hidden; 
+	 	@media screen and (max-width: 1024px) {
+			display: none;
+	 	}
+	}
+}
+.custom-cursor {
+	.circle-cursor--inner {
+	    margin-left: rem(-2px);
+	    margin-top: rem(-2px);
+	    width: rem(4px);
+	    height: rem(4px);
+	    z-index: 10000001;
+	    background-color: red; 
+	}
+	.circle-cursor--outer {
+	    margin-left: rem(-15px);
+	    margin-top: rem(-15px);
+	    width: rem(30px);
+	    height: rem(30px);
+	    border: rem(1px) solid red;
+        box-sizing: border-box;
+	    z-index: 10000000;
+	    transition: all .08s ease-out; 
+	}
+	.circle-cursor--outer.cursor-link-hover {
+	    margin-left: rem(-25px);
+	    margin-top: rem(-25px);
+	    width: rem(50px);
+	    height: rem(50px);
+	    border: rem(1px) solid red;
+        box-sizing: border-box;
+	    z-index: 10000000;
+	    transition: all .08s ease-out; 
+	}
+	.circle-cursor--inner.cursor-link-hover {
+		margin-left: rem(-3px);
+		margin-top: rem(-3px);
+		width: rem(6px);
+		height: rem(6px);
+		background-color: red;
+	}
+}
+

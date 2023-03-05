@@ -1,0 +1,169 @@
+/*------------------- 4.9 Pagination -------------------*/
+.pagination {
+	justify-content: center;
+	margin-top: rem(50px);
+	ul {
+		display: table;
+		padding-left: 0;
+		margin-bottom: rem(0px);
+		display: flex;
+		li {
+			display: flex;
+			margin-right: 6px;
+			a {
+				text-align: center;
+				height: rem(46px);
+				width: rem(46px);
+				line-height: rem(46px);
+				color: $color_body;
+				font-size: rem(22px);
+				font-weight: 600;
+				background-color: #efefef;
+				border: none;
+				border-radius: 3px;
+				&:hover {
+					background-color: $color_primary;;
+					color: $color_light;
+				}
+				@media only screen and (max-width: 575px) {
+					font-size: rem(16px);
+					height: rem(40px);
+					width: rem(40px);
+					line-height: rem(40px);
+				}
+				i {
+					line-height: rem(48px);
+					@media only screen and (max-width: 575px) {
+						line-height: rem(28px);
+					}
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			&:hover,
+			&.active {
+				a {
+					color: $color_light;
+					background-color: $color_primary;
+				}
+			}
+		}
+	}
+}
+
+.thumb-pagination {
+	margin-top: rem( 50px );
+	text-align: center;
+	@media only screen and (max-width: 575px) {
+		margin-top: rem( 65px );
+	}
+	.post-nav {
+	    display: inline-block;
+	    margin: 0 8px;
+	    a {
+	    	font-size: 18px;
+	    	font-weight: 500;
+    		color: #000000;
+	    }
+	}
+	.prev-btn {
+		i {
+			margin-right: 8px;
+		}
+	}
+	.next-btn {
+		i {
+			margin-left: 8px;
+		}
+	}
+}
+
+.pagination-nav {
+	text-align: center;
+	margin-top: rem(20px);
+	ul {
+		li {
+			display: inline-block;
+			margin-right: rem(28px);
+			position: relative;
+			&:last-child {
+				margin-right: 0;
+				&:after {
+					display: none;
+				}
+			}
+			&:after {
+				content: "";
+				height: rem(35px);
+				width: rem(2px);
+				background-color: #e7e7e7;
+				position: absolute;
+				top: 0;
+				right: rem(-18px);
+			}
+			a {
+				font-size: rem(16px);
+				color: $color_body;
+				font-weight: 600;
+				display: flex;
+				align-items: center;
+				@media only screen and (max-width: 575px) {
+				 	font-size: rem(13px);
+				}
+				i {
+					&:before {
+						font-size: rem(18px);
+						@media only screen and (max-width: 575px) {
+						 	font-size: rem(15px);
+						}
+					}
+				}
+				&:hover {
+					color: $color_title;
+				}
+			}
+			a.active {
+				color: $color_title;
+			}
+		}
+		.nav-prev {
+			a {
+				i {
+					margin-right: rem(10px);
+				}
+			}
+		}
+		.nav-next {
+			a {
+				i {
+					margin-left: rem(10px);
+				}
+			}
+		}
+	}
+}
+.pagination-nav-area {
+	margin-bottom: rem(30px);
+}
+.fmwave-page-links {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+.comment-pagination {
+	width: 100%;
+	display: inline-block;
+	ul {
+		li {
+			width: 50%;
+		}
+		li.older-comments {
+			float: left;
+		}
+		li.newer-comments {
+			float: right;
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+/*------------------- 5.8 Error Page -------------------*/
+.error-page {
+	background-color: #fff9ee;
+	text-align: center;
+	padding: rem(100px 0);
+	@media only screen and (max-width: 991px) {
+		padding: rem(80px 0);
+	}
+	.error-logo {
+		margin-bottom: rem(35px);
+	}
+	.item-title {
+		font-size: 36px;
+		font-weight: 600;
+		line-height: rem(50px);
+		margin-bottom: rem(30px);
+		span {
+			display: block;
+		}
+	}
+	.item-btn {
+		font-weight: 700;
+		color: $color_light;
+		background-color: $color_primary;
+		border-radius: rem(3px);
+		padding: rem(10px 25px);
+		&:hover {
+			background-color: $color_black;
+		}
+	}
+}

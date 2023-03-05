@@ -1,0 +1,112 @@
+/*---------------------------------------------
+
+Template Name: Fmwave 
+Template URL: http://radiustheme.com/demo/wordpress/themes/fmwave
+Description: Radio, Music & DJ WordPress theme
+Author: RadiusTheme
+Author URL: http://www.radiustheme.com 
+Version: 1.0.0
+
+===================   
+CSS INDEX
+===================
+1. Typography
+2. Bootstrap Overwrite
+    2.1 Form
+    2.2 Grid
+3. Vendor Custom Style
+    3.1 Countdown
+    3.2 PagePiling
+    3.3 Slick
+4. Template Layout Style
+    4.1 Animation
+    4.2 Back To Top
+    4.3 Button
+    4.4 Custom Cursor
+    4.5 Footer
+    4.6 Global
+    4.7 Header Menu
+    4.8 Inner Page Banner
+    4.9 Pagination
+    4.10 Preloader
+    4.11 Section
+    4.12 Widget
+5. Template Page Style
+    5.1 About Us
+    5.2 Banner
+    5.3 Blog
+    5.4 Brand
+    5.5 Call to Action
+    5.6 Coming Soon
+    5.7 Contact
+    5.8 Gallery
+    5.9 Hero
+    5.10 Photoshoot
+    5.11 Portfolio
+    5.12 Pricing
+    5.13 Progress
+    5.14 Service
+    5.15 Team
+    5.16 Testimonial
+
+--------------------------------------------*/
+@import "generate/_variables.scss";
+@import "generate/_mixins.scss";
+/*=======================================================================
+1. Typography 
+=========================================================================*/
+@import "template-layout/_typography.scss";
+/*=======================================================================
+2. Bootstrap Overwrite
+=========================================================================*/
+@import "vendor-custom/bootstrap/_form.scss";
+@import "vendor-custom/bootstrap/_grid.scss";
+/*=======================================================================
+3. Vendor Custom Style
+=========================================================================*/
+@import "vendor-custom/countdown/_countdown.scss";
+@import "vendor-custom/pagepiling/_pagepiling.scss";
+@import "vendor-custom/slick/_slick.scss";
+/*=======================================================================
+4. Template Layout Style
+=========================================================================*/
+@import "template-layout/_animation.scss";
+@import "template-layout/_back_to_top.scss";
+@import "template-layout/_button.scss";
+@import "template-layout/_custom_cursor.scss";
+@import "template-layout/_footer.scss";
+@import "template-layout/_global.scss";
+@import "template-layout/_header_menu.scss";
+@import "template-layout/_inner_page_banner.scss";
+@import "template-layout/_pagination.scss";
+@import "template-layout/_preloader.scss";
+@import "template-layout/_section.scss";
+@import "template-layout/_widget.scss";
+@import "template-layout/_error.scss";
+@import "template-layout/_gutenberg.scss";
+/*=======================================================================
+5. Template Page Style
+=========================================================================*/
+@import "template-section/_about.scss";
+@import "template-section/_banner.scss";
+@import "template-section/_blog.scss";
+@import "template-section/_brand.scss";
+@import "template-section/_call_to_action.scss";
+@import "template-section/_coming-soon.scss";
+@import "template-section/_contact.scss";
+@import "template-section/_gallery.scss";
+@import "template-section/_hero.scss";
+@import "template-section/_photoshoot.scss";
+@import "template-section/_portfolio.scss";
+@import "template-section/_pricing.scss";
+@import "template-section/_progress.scss";
+@import "template-section/_service.scss";
+@import "template-section/_team.scss";
+/*@dev*/
+@import "template-section/_show.scss";
+@import "template-section/_chart_box.scss";
+@import "template-section/_slider_text.scss";
+@import "template-section/_video.scss";
+@import "template-section/_event.scss";
+@import "template-section/_podcast.scss";
+@import "template-section/_faq.scss";

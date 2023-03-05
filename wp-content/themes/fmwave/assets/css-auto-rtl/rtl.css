@@ -1,0 +1,111 @@
+.chart-box-content .chart-list > ol > li {
+	text-align: right;
+}
+nav.template-main-menu > ul > li ul.sub-menu li,
+nav.template-main-menu > ul > li ul.children li {
+    text-align: right;
+}
+.footer-middle .footer-social ul,
+.footer-middle .footer-address ul,
+.footer-middle .footer-box .widgets,
+.footer-middle .footer-box .widget_nav_menu ul.menu li,
+.footer-middle .footer-box .footer-title .widget-title {
+    text-align: right;
+}
+.footer-style-4 .footer-middle .footer-box .footer-title .widget-title:after {
+    right: 0;
+    left: auto;
+    transform: rotateX(0) rotateY(180deg);
+}
+.footer-style-2 .footer-logo {
+	text-align: right;
+}
+.fluentform .newsletter-form .ff-btn {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.slider-layout1 .slider-content h1.slider-big-text,
+.slider-layout1 .slider-content .slider-btn-area {
+	text-align: right;
+}
+.slider-layout1 .show-details {
+    clip-path: polygon(64% 68%, 80% 100%, 0% 100%, 0% 68%);
+}
+[class^="flaticon-"]:before, 
+[class*=" flaticon-"]:before, 
+[class^="flaticon-"]:after, 
+[class*=" flaticon-"]:after {
+    margin-right: 20px;
+}
+
+/*addon style*/
+.hero-content,
+.our-program li,
+.current-show .media,
+.team-standard .team-box .item-content,
+.blog-grid-layout .blog-box .item-content,
+.upcoming-dynamic .show-box .item-content .item-info,
+.show-schedule-tab .tab-content .show-box .media .media-body,
+.popular-chart-box .single-music .music-name,
+.shows-list .show-list li .media .media-body,
+.event-box .media .media-body .item-title,
+.event-list .event-content,
+.team-grid .team-item .item-content,
+.current-show-2 .media .show-time,
+.upcoming-dynamic2 .show-box .item-content,
+.video-tab-2 .tab-content .tab-pane .item-content,
+.show-schedule-tab-2 .tab-content .show-box,
+.music-channel-3 .music-box .item-content,
+.track-list-5 ol li,
+.shop-layout-style2 .item-box .item-content,
+.show-schedule .show-box .item-content,
+.single-show .show-list .media .media-body,
+.single-team-layout .item-content,
+.contact-method,
+.single-music .music-content,
+.single-podcast .podcast-details,
+.event-grid .event-box .item-content,
+.sidebar-widget-area .widget,
+.content-area .rt-content,
+.woocommerce .product-details-page .rtin-right,
+.woocommerce div.product .woocommerce-tabs .panel,
+section.related.products h2 {
+    text-align: right;
+}
+.current-show-3 .item-content {
+	bottom: 105px;
+}
+.current-show-3 .item-content .host-name {
+    transform: rotate(-10deg);
+}
+.current-show-3 .item-content .host-name:after {
+    transform: rotate( 10deg );
+}
+.current-show-3 .item-content .item-title {
+    transform: rotate(-10deg);
+}
+.current-show-3 .item-content .item-title:after {
+    transform: rotate( 10deg );
+}
+.current-show-2 .media .media-body .host-name {
+    transform: rotate(-10deg);
+    text-align: right;
+}
+.current-show-2 .media .media-body .host-name:after {
+    transform: rotate( 5deg );
+}
+.current-show-2 .media .media-body .item-title {
+    transform: rotate(-10deg);
+    text-align: right;
+    margin-top: 45px;
+}
+.current-show-2 .media .media-body .item-title:after {
+    transform: rotate( 5deg );
+}
+.current-show-2 .media .media-body {
+    margin-top: 200px;
+}
+/*owl carousel*/
+.rtl .owl-carousel,
+.rtl .bx-wrapper { direction: ltr; }
+.rtl .owl-carousel .owl-item { direction: rtl; }

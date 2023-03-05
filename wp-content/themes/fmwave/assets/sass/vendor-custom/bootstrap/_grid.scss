@@ -1,0 +1,97 @@
+/*------------------- 2.2 Grid -------------------*/
+
+@media only screen and (min-width: 1230px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media only screen and (min-width: 1445px) {
+    .container-lg {
+        max-width: 1415px;
+    }
+}
+@media only screen and (min-width: 1570px) {
+    .container-xl {
+        max-width: 1550px;
+    }
+}
+.rtl .container-lg {
+    margin: 0 auto 0 0;
+}
+.container-fluid.full-width {
+	padding-left: 0;
+	padding-right: 0;
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.row>[class^="col-"],
+	.row>[class*=" col-"] {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+}
+
+.row.gutters-10 {
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+
+    >[class^="col-"] {
+        padding-left: rem(5px);
+        padding-right: rem(5px);
+    }
+}
+
+.row.gutters-15 {
+    padding-left: rem(7.5px);
+    padding-right: rem(7.5px);
+
+    >[class^="col-"] {
+        padding-left: rem(7.5px);
+        padding-right: rem(7.5px);
+    }
+}
+
+.row.gutters-20 {
+    padding-left: rem(5px);
+    padding-right: rem(5px);
+
+    >[class^="col-"] {
+        padding-left: rem(10px);
+        padding-right: rem(10px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .row.gutters-40 {
+        margin-left: rem(-20px);
+        margin-right: rem(-20px);
+
+        >[class^="col-"] {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    .row.gutters-50 {
+        margin-left: rem(-25px);
+        margin-right: rem(-25px);
+
+        >[class^="col-"] {
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    .row.gutters-65 {
+        margin-left: rem(-32.5px);
+        margin-right: rem(-32.5px);
+
+        >[class^="col-"] {
+            padding-left: rem(32.5px);
+            padding-right: rem(32.5px);
+        }
+    }
+}

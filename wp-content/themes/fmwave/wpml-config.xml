@@ -1,0 +1,81 @@
+<wpml-config>
+    <admin-texts>
+        <key name="fmwave">
+            <key name="menu_btn_text" />
+            <key name="copyright_text" />
+            <key name="error_text1" />
+            <key name="error_text2" />
+            <key name="error_buttontext" />			
+            <key name="music_slug" />
+            <key name="music_cat_slug" />
+            <key name="music_genre_slug" />
+            <key name="music_album_slug" />
+            <key name="podcast_slug" />
+            <key name="podcast_cat_slug" />
+            <key name="show_slug" />
+            <key name="show_cat_slug" />
+            <key name="team_slug" />
+            <key name="team_cat_slug" />
+            <key name="event_slug" />
+            <key name="event_cat_slug" />
+            <key name="video_slug" />
+            <key name="video_cat_slug" />
+            <key name="gallery_slug" />
+            <key name="gallery_cat_slug" />
+        </key>
+    </admin-texts>
+    <custom-types>
+        <custom-type translate="1">rtcpt_music</custom-type>
+        <custom-type translate="1">rtcpt_team</custom-type>
+        <custom-type translate="1">rtcpt_show</custom-type>
+        <custom-type translate="1">rtcpt_event</custom-type>
+        <custom-type translate="1">rtcpt_podcast</custom-type>
+        <custom-type translate="1">rtcpt_video</custom-type>
+        <custom-type translate="1">rtcpt_gallery</custom-type>
+        <custom-type translate="1">rtcpt_logoshowcase</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">rtcpt_team_category</taxonomy>
+        <taxonomy translate="1">rtcpt_music_category</taxonomy>
+        <taxonomy translate="1">rtcpt_music_genre</taxonomy>
+        <taxonomy translate="1">rtcpt_music_album</taxonomy>
+        <taxonomy translate="1">rtcpt_show_category</taxonomy>
+        <taxonomy translate="1">rtcpt_event_category</taxonomy>
+        <taxonomy translate="1">rtcpt_podcast_category</taxonomy>
+        <taxonomy translate="1">rtcpt_video_category</taxonomy>
+        <taxonomy translate="1">rtcpt_gallery_category</taxonomy>
+    </taxonomies>
+    <custom-fields>
+       <custom-field action="translate">rtcpt_show_name</custom-field>
+       <custom-field action="translate">rtcpt_show_date</custom-field>
+       <custom-field action="translate">rtcpt_phone</custom-field>
+       <custom-field action="translate">rtcpt_email</custom-field>
+       <custom-field action="translate">rtcpt_testimonial_designation</custom-field>
+       <custom-field action="translate">rtcpt_team_socials_header</custom-field>
+       <custom-field action="translate">rtcpt_slider_title</custom-field>
+       <custom-field action="translate">rtcpt_sub_title</custom-field>
+       <custom-field action="translate">rtcpt_short_detail</custom-field>
+       <custom-field action="translate">rtcpt_video_link</custom-field>
+	   
+       <custom-field action="translate">rtcpt_location</custom-field>
+       <custom-field action="translate">rtcpt_address</custom-field>
+       <custom-field action="translate">rtcpt_phone</custom-field>
+       <custom-field action="translate">rtcpt_website</custom-field>
+       <custom-field action="translate">rtcpt_event_type</custom-field>
+       <custom-field action="translate">rtcpt_seat</custom-field>
+       <custom-field action="translate">rtcpt_place</custom-field>
+       <custom-field action="translate">rtcpt_ticket</custom-field>
+       <custom-field action="translate">rtcpt_map</custom-field>
+       <custom-field action="translate">rtcpt_soundcloud</custom-field>
+       <custom-field action="translate">rtcpt_spotify</custom-field>
+       <custom-field action="translate">rtcpt_extenal_link</custom-field>
+       <custom-field action="translate">rtcpt_inner_link</custom-field>
+       <custom-field action="translate">rtcpt_video_link</custom-field>
+       <custom-field action="translate">rtcpt_video_length</custom-field>
+       <custom-field action="translate">rtcpt_track_length</custom-field>
+       <custom-field action="translate">rtcpt_artist</custom-field>
+       <custom-field action="translate">rtcpt_produce</custom-field>
+       <custom-field action="translate">rtcpt_track_no</custom-field>
+       <custom-field action="translate">rtcpt_details</custom-field>
+   </custom-fields>
+</wpml-config>

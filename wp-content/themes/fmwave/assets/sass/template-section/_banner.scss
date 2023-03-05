@@ -1,0 +1,648 @@
+/*------------------- 5.2 Banner -------------------*/
+.video-banner-section {
+	&:before {
+		content: "";
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.75);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+	.media {
+		padding-left: rem(45px);
+		align-items: center;
+		@media only screen and (max-width: 767px) {
+			padding-left: 0; 
+		}
+		@media only screen and (max-width: 575px) {
+			justify-content: center;
+		}
+		.icon-wrap {
+			text-align: center;
+			&:before {
+				content: "";
+				height: 100%;
+				width: rem(1px);
+				background-color: rgba(255, 255, 255, 0.60);
+				position: absolute;
+				top: 0;
+				z-index: -2;
+			}
+			&:after {
+				content: "";
+				height: rem(1px);
+				width: rem(100%);
+				background-color: rgba(255, 255, 255, 0.60);
+				position: absolute;
+				top: 50%;
+				left: 0;
+				z-index: -2;
+			}
+			.play-btn {
+				position: relative;
+				text-align: center;
+				height: rem(210px);
+				width: rem(210px);
+				background-color: rgba(255, 255, 255, 0.20);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: rem(25px);
+				color: $color_light;
+				@media only screen and (max-width: 991px) {
+					height: rem(180px);
+					width: rem(180px);
+				}
+				@media only screen and (max-width: 767px) {
+					height: rem(150px);
+					width: rem(150px);
+				}
+				&:before {
+					content: "";
+					height: rem(80px);
+					width: rem(80px);
+					background-color: rgba(255, 255, 255, 0.25);
+					border-radius: 50%;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					animation: pulse 1500ms infinite;
+					z-index: -1;
+					@media only screen and (max-width: 991px) {
+						height: rem(60px);
+						width: rem(60px);
+					}
+				}
+				i {
+					margin-left: rem(6px);
+					margin-bottom: rem(1px);
+				}
+			}
+		}
+		.media-body {
+			margin-left: rem(40px);
+			.item-subtitle {
+				font-size: rem(18px);
+				color: $color_light;
+				letter-spacing: rem(2px);
+				margin-bottom: rem(18px);
+			}
+			.item-title {
+				font-size: rem(50px);
+				font-weight: 600;
+				color: $color_light;
+				margin-bottom: 0;
+				@media only screen and (max-width: 991px) {
+					line-height: 1.4; 
+					font-size: rem(44px);
+				}
+				@media only screen and (max-width: 767px) {
+					font-size: rem(30px);
+				}
+			}
+		}
+	}
+}
+
+/*CTA*/
+.banner-section {
+	position: relative;
+	z-index: 2;
+	.item-subtitle {
+		font-size: rem(20px);
+		font-weight: 300;
+		color: $color_light;
+		margin-bottom: rem(2px);
+	}
+	.item-title {
+		font-weight: 700;
+		color: $color_light;
+		margin-bottom: rem(40px);
+	}
+	.item-btn {
+		font-size: rem(15px);
+		font-weight: 500;
+		color: $color_light;
+		background-color: $color_primary;
+		border-radius: rem(3px);
+		padding: rem(7px 32px 8px);
+		a {
+			color: $color_light;
+			&:hover {
+				color: $color_light;
+			}
+		}
+		&:hover {
+			background-color: #cc1a21;
+		}
+	}
+}
+/*New banner - home 2*/
+/*------------------- 5.3 Banner -------------------*/
+.hero-banner-space {
+	padding: rem(323px 0 160px);
+
+	@media only screen and (max-width: 1199px) {
+		padding: rem(323px 0 160px);
+	}
+	@media only screen and (max-width: 991px) {
+		padding: rem(100px 0 250px);
+		margin-top: 0;
+	}
+	@media only screen and (max-width: 767px) {
+		padding: rem(80px 0 250px);
+	}
+}
+
+.hero-content {
+	.item-title {
+		font-size: rem(100px);
+		font-weight: 700;
+		line-height: 1.1;
+		background: linear-gradient(to top, #ff630e 0%, #ff000a 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: rem(40px);
+		transition: all 0.5s ease-in-out;
+		animation: stripes 10000ms linear infinite;
+		span {
+			font-size: rem(70px);
+			font-weight: 600;
+			display: block;
+			@media only screen and (max-width: 1199px) {
+				font-size: rem(60px);
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: rem(50px);
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: rem(40px);
+			}
+			@media only screen and (max-width: 575px) {
+				font-size: rem(30px);
+			}
+		}
+		@media only screen and (max-width: 1199px) {
+			font-size: rem(90px);
+		}
+		@media only screen and (max-width: 991px) {
+			font-size: rem(70px);
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: rem(60px);
+			line-height: 1.2;
+			margin-bottom: rem(25px);
+		}
+		@media only screen and (max-width: 575px) {
+			font-size: rem(50px);
+		}
+	}
+	.item-btn {
+		font-weight: 500;
+		color: $color_light;
+		background-color: $color_primary;
+		padding: rem(11px 24px 9px);
+		border-radius: rem(4px);
+		animation: fadeInUp 1500ms ease-in-out;
+		position: relative;
+		z-index: 2;
+		&:after {
+			content: "";
+			height: 100%;
+			width: 0;
+			background-color: #bd2127;
+			border-radius: rem(3px);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover {
+			&:after {
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+}
+.rt-audio-player-wrap {
+	padding: rem(30px 0);
+	@media(max-width:767px){
+		padding: rem(10px 0);
+	}
+	.player-box {
+		display: flex;
+		align-items: center;
+		padding: 0 20px;
+		@media only screen and (max-width: 767px) {
+			display: block;
+		}
+		.song-name {
+			margin-right: rem(130px);
+			@media only screen and (max-width: 991px) {
+				margin-right: rem(50px);
+			}
+			@media only screen and (max-width: 575px) {
+				text-align: center;
+				margin-right: rem(0px);
+			}
+			.item-title {
+				color: $color_light;
+				font-weight: 400;
+				line-height: rem(30px);
+				span {
+					font-size: rem(15px);
+					display: block;
+				}
+			}
+		}
+		.audio-player {
+			flex: 1;
+			background-color: transparent;
+			@media only screen and (max-width: 767px) {
+				width: auto;
+				min-width: 100%;
+				padding: 0;
+			}
+			.play-pause-btn {
+				margin-right: rem(12px);
+				@media only screen and (max-width: 575px) {
+					margin-right: 0;
+				}
+				.play-pause-btn__icon {
+					fill: $color_light;
+				}
+				svg {
+					height: rem(18px);
+					width: rem(18px);
+				}
+			}
+			.controls {
+				.controls__current-time {
+					margin-right: rem(32px);
+					font-size: rem(20px);
+					color: $color_light;
+					@media only screen and (max-width: 575px) {
+						margin-right: 0;
+						font-size: rem(16px);
+					}
+				}
+				.controls__slider {
+					background-color: rgba(255, 255, 255, 0.35);
+					height: rem(3px);
+					.gap-progress {
+						background-color: $color_primary;
+						.pin {
+							background-color: $color_light;
+						}
+					}
+				}
+				.controls__total-time {
+					margin-right: rem(15px);
+					margin-left: rem(22px);
+					font-size: rem(20px);
+					color: $color_light;
+					@media only screen and (max-width: 575px) {
+						margin: 0;
+						font-size: rem(16px);
+					}
+				}
+			}
+			.volume {
+				svg {
+					height: rem(18px);
+					width: rem(18px);
+				}
+				.volume__speaker {
+					fill: #c0c0c0;
+				}
+				.volume__progress {
+					background-color: $color_primary;
+					.pin {
+						background-color: $color_light;
+					}
+				}
+			}
+		}
+	}
+	.mejs-container {
+		width: 100% !important;
+	}
+	.mejs-container,
+	.mejs-controls,
+	.mejs-embed,
+	.mejs-embed body,
+	.mejs-container { background: transparent !important; }
+	.mejs-time-buffering,
+	.mejs-time-current,
+	.mejs-time-float,
+	.mejs-time-float-corner,
+	.mejs-time-float-current,
+	.mejs-time-hovered,
+	.mejs-time-loaded,
+	.mejs-time-marker,
+	.mejs-time-total,
+	.mejs-horizontal-volume-total,
+	.mejs-time-handle-content {
+		height: 3px;
+	}
+	.mejs-time-rail {
+		padding-top: 14px;
+	}
+	.mejs-horizontal-volume-total {
+		margin: 4px 0 0 0;
+	}
+	.mejs-button>button {
+		margin: 12px 6px 10px 6px;
+	}
+}
+
+/*-- Banner 3 --*/
+.hero-content-2 {
+	text-align: right;
+	@media only screen and (max-width: 575px) {
+		text-align: center;
+	}
+	@media only screen and (max-width: 479px) {
+		text-align: center;
+	}
+	.sub-title {
+		font-size: rem(42px);
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
+		display: block;
+		margin-bottom: rem(7px);
+		animation: fadeInUp 1000ms ease-in-out;
+		@media only screen and (max-width: 991px) {
+			font-size: rem(36px);
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: rem(32px);
+		}
+	}
+	.item-title {
+		font-size: rem(62px);
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: rem(15px);
+		animation: fadeInDown 1500ms ease-in-out;
+		
+		@media only screen and (max-width: 991px) {
+			font-size: rem(55px);
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: rem(50px);
+		}
+		@media only screen and (max-width: 575px) {
+			font-size: rem(45px);
+		}
+		@media only screen and (max-width: 479px) {
+			font-size: rem(40px);
+		}
+	}
+	p {
+		margin: rem(0 0 50px auto);
+	}
+	.item-btn {
+		font-weight: 500;
+		color: $color_light;
+		background-color: $color_primary;
+		padding: rem(11px 24px 9px);
+		border-radius: rem(4px);
+		animation: fadeInUp 1500ms ease-in-out;
+		position: relative;
+		z-index: 2;
+		&:after {
+			content: "";
+			height: 100%;
+			width: 0;
+			background-color: $color_darkprimary;
+			border-radius: rem(4px);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover {
+			color: $color_light;
+			&:after {
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+}
+
+.hero-modern-banner {
+	margin-top: rem(-122px);
+	.hero-area-wrap {
+		padding: rem(320px 150px 360px 0);
+		position: relative;
+		background-image: url('../../media/banner/slide-banner2.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: 2;
+		overflow: hidden;
+		@media only screen and (max-width: 1199px) {
+			padding: rem(300px 50px 300px 0);
+		}
+		@media only screen and (max-width: 991px) {
+			padding: rem(300px 15px 300px 0);
+		}
+		@media only screen and (max-width: 767px) {
+			padding: rem(200px 15px 300px 0);
+		}
+		@media only screen and (max-width: 575px) {
+			padding: rem(180px 15px 250px 0);
+		}
+
+	}
+	.audio-palyer-wrap {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: $color_primary;
+		padding: rem(40px 70px 40px 50px);
+		width: 67%;
+		@media only screen and (max-width: 1199px) {
+			width: 100%;
+		}
+		@media only screen and (max-width: 991px) {
+			padding: rem(40px 30px);
+		}
+		@media only screen and (max-width: 575px) {
+			padding: rem(20px 15px);
+		}
+		.player-box {
+			display: flex;
+			align-items: center;
+			@media only screen and (max-width: 767px) {
+				display: block;
+				text-align: center;
+			}
+			@media only screen and (max-width: 575px) {
+				overflow: auto;
+				white-space: nowrap;
+			}
+			.song-name {
+				margin-right: rem(80px);
+				@media only screen and (max-width: 991px) {
+					margin-right: rem(30px);
+					margin-right: 0;
+					margin-bottom: rem(10px);
+				}
+				.item-title {
+					font-size: rem(18px);
+					color: $color_light;
+					font-weight: 600;
+					margin-bottom: 0;
+					line-height: rem(25px);
+				}
+			}
+			.artist-name {
+				font-size: rem(18px);
+				color: $color_light;
+				font-weight: 300;
+			}
+			.audio-player {
+				flex: 1;
+				background-color: $color_primary;
+				box-shadow: none;
+				width: auto;
+				@media only screen and (max-width: 575px) {
+					min-width: rem(500px)
+				}
+				.play-pause-btn {
+					margin-right: rem(12px);
+					.play-pause-btn__icon {
+						fill: $color_light;
+					}
+					svg {
+						height: rem(18px);
+						width: rem(18px);
+					}
+				}
+				.controls {
+					.controls__current-time {
+						margin-right: rem(32px);
+						font-size: rem(20px);
+						color: $color_light;
+						@media only screen and (max-width: 991px) {
+							margin-right: rem(20px);
+						}
+					}
+					.controls__slider {
+						background-color: rgba(255, 255, 255, 0.35);
+						height: rem(3px);
+						.gap-progress {
+							background-color: $color_light;
+							.pin {
+								background-color: $color_light;
+							}
+						}
+					}
+					.controls__total-time {
+						margin-right: rem(15px);
+						margin-left: rem(22px);
+						font-size: rem(20px);
+						color: $color_light;
+					}
+				}
+				.volume {
+					svg {
+						height: rem(18px);
+						width: rem(18px);
+					}
+					.volume__speaker {
+						fill: $color_light;
+					}
+					.volume__progress {
+						background-color: $color_primary;
+						.pin {
+							background-color: $color_light;
+						}
+					}
+				}
+			}
+		}
+	}
+	.shape-icon {
+		.icon {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+			transition: all 1s ease-in-out;
+		}
+		.girl-img {
+			bottom: 0;
+			left: -20%;
+			transition-delay: 0.1s;
+		}
+		.icon.sal-animate {
+			opacity: 0.1;
+		}
+		.icon1 {
+			top: 15%;
+			right: 8%;
+		}
+		.icon1.sal-animate {
+			top: 15%;
+			right: 13%;
+		}
+		.icon2 {
+			top: 9%;
+			right: 48%;
+		}
+		.icon2.sal-animate {
+			top: 9%;
+			right: 43%;
+		}
+		.icon3 {
+			bottom: 10%;
+			right: 11%;
+		}
+		.icon3.sal-animate {
+			bottom: 22%;
+			right: 11%;
+		}
+		.icon4 {
+			bottom: 29%;
+			right: 45%;
+		}
+		.icon4.sal-animate {
+			bottom: 29%;
+			right: 35%;
+		}
+	}
+}
+
+.loaded {
+	.hero-modern-banner {
+		.shape-icon {
+			.girl-img {
+				left: rem(60px);
+				opacity: 1;
+				@media only screen and (max-width: 1199px) {
+					left: 0;
+					transform: scale(0.8);
+				}
+			}
+		}
+	}
+}
+
+@keyframes stripes {
+	100% {
+		background-position: 0 500px;
+	}
+}

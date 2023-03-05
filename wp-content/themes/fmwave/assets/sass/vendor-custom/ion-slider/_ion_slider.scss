@@ -1,0 +1,101 @@
+/*------------------- 3.4 noUiSlider -------------------*/
+
+.price-range-wrapper {
+    position: relative;
+
+    &:before {
+        content: "";
+        background: url('../img/figure/line.png');
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        bottom: rem(-25px);
+        left: rem(6px);
+        @media only screen and (max-width: 991px) {
+            left: 0;
+            background-repeat-x: repeat;
+        }
+    }
+
+    &:after {
+        clear: both;
+        display: block;
+        content: "";
+    }
+}
+
+.price-range-wrapper {
+    .irs {
+        font-family: "Open Sans", sans-serif;
+    }
+    .irs--flat .irs-min, .irs--flat .irs-max {
+        display: none;
+    }
+
+    .irs--flat .irs-single {
+        visibility: hidden !important;
+    }
+
+    .irs-from, .irs-to, .irs-single {
+        top: rem(-5px);
+    }
+
+    .irs--flat .irs-from, .irs--flat .irs-to {
+        visibility: visible !important;
+    }
+    .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+        font-size: rem(15px);
+        font-weight: 600;
+        color: #646464;
+        background-color: transparent;
+        left: 0 !important;
+    }
+    .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+        display: none;
+    }
+    .irs--flat .irs-to {
+        left: inherit !important;
+        right: 0;
+
+    }
+    .irs--flat .irs-from {
+        left: 0 !important;
+       
+    }
+
+    .irs--flat .irs-line {
+        height: rem(10px);
+        background-color: #f4f4f4;
+        border-radius: rem(20px);
+        box-shadow: inset rem(0 1px 2px) rgba(216, 216, 216, 0.55);
+    }
+    .irs--flat .irs-bar {
+        height: rem(10px);
+        background-color: $color_secondary;
+    }
+
+    .irs--flat .irs-handle {
+        cursor: pointer;
+    }
+
+    .irs--flat .irs-handle>i:first-child {
+        height: rem(16px);
+        width: rem(16px);
+        background-color: $color_light;
+        border-radius: 50%;
+        margin-left: rem(-7px);
+        box-shadow: rem(0px 3px 10px 0px) rgba(0, 0, 0, 0.50);
+        &:after {
+            content: "";
+            height: rem(6px);
+            width: rem(6px);
+            background-color: $color_primary;
+            border-radius: 50%;
+            position: absolute;
+            top: rem(5px);
+            left: rem(5px);        
+        }
+    }
+}

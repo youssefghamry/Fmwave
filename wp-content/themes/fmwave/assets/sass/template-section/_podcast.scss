@@ -1,0 +1,258 @@
+/*------------------- 5.12 Podcast -------------------*/
+.podcast-box {
+	margin-bottom: rem(30px);
+	.item-img {
+		position: relative;
+		border-radius: rem(4px);
+		overflow: hidden;
+		img {
+			border-radius: rem(4px);
+			transform: scale(1);
+			transition: transform 5s cubic-bezier(0.2, 0.96, 0.34, 1);
+		}
+		&:before {
+			content: "";
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.60);
+			border-radius: rem(4px);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+			z-index: 1;
+		}
+		.video-icon {
+			position: absolute;
+			top: 40%;
+			left: 0;
+			right: 0;
+			transform: translateY(-50%);
+			text-align: center;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+			z-index: 2;
+			.play-btn {
+				position: relative;
+				text-align: center;
+				height: rem(62px);
+				width: rem(62px);
+				background-color: rgba(255, 255, 255, 0.5);
+				border-radius: 50%;
+				font-size: rem(15px);
+				color: $color_primary;
+				margin: 0 auto;
+				&:before {
+					content: "";
+					height: rem(50px);
+					width: rem(50px);
+					background-color: rgba(255, 255, 255, 1);
+					border-radius: 50%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateY(-50%) translateX(-50%);
+					z-index: -1;
+				}
+				i {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateY(-50%) translateX(-50%);
+				}
+				&:hover {
+					animation: pulse 1s;
+				}
+			}
+		}
+	}
+	.item-content {
+		position: relative;
+		margin: rem(-25px 15px 0);
+		text-align: center;
+		background-color: $color_light;
+		padding: rem(5px 10px);
+		border-radius: rem(4px);
+		box-shadow: rem(0 0 38px 0) rgba(0, 0, 0, 0.07);
+		z-index: 3;
+		.item-title {
+			font-size: rem(18px);
+			margin-bottom: 0;
+			a {
+				color: $color_black;
+				&:hover {
+					color: $color_primary;
+				}
+			}
+		}
+	}
+	&:hover {
+		.item-img {
+			img {
+				transform: scale(1.3);
+			}
+			&:before {
+				visibility: visible;
+				opacity: 1;
+			}
+			.video-icon {
+				top: 50%;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.single-podcast {
+	.podcast-content {
+		.item-img {
+			margin-bottom: rem(25px);
+			overflow: hidden;
+			position: relative;
+			&:before {
+				content: "";
+				height: 100%;
+				width: 100%;
+				background: rgba(0, 0, 0, 0.60);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				border-radius: rem(3px);
+			}
+			&:after {
+				content: url('../../media/podcast/shape.png');
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			img {
+				border-radius: rem(3px);
+			}
+			.media {
+				align-items: center;
+				position: absolute;
+				top: rem(25px);
+				left: rem(30px);
+				z-index: 1;
+				@media only screen and (max-width: 479px) {
+					top: 50%;
+					transform: translateY(-50%);	
+				}
+				.item-icon {
+					margin-right: rem(15px);
+				}
+				.play-btn {
+					position: relative;
+					text-align: center;
+					height: rem(50px);
+					width: rem(50px);
+					background-color: rgba(255, 255, 255, 1);
+					border-radius: 50%;
+					font-size: rem(15px);
+					color: $color_primary;
+					margin: 0 auto;
+					&:before {
+						content: "";
+						height: rem(50px);
+						width: rem(50px);
+						background-color: rgba(255, 255, 255, 1);
+						border-radius: 50%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translateY(-50%) translateX(-50%);
+						z-index: -1;
+					}
+					i {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translateY(-50%) translateX(-50%);
+					}
+				}
+				.item-title {
+					color: $color_light;
+					font-weight: 500;
+					line-height: rem(20px);
+				}
+				.item-song {
+					color: $color_light;
+				}
+				&:hover {
+					.play-btn {
+						animation: pulse 1s;
+					}
+				}
+			}
+			.soundcloud-icon {
+				position: absolute;
+				top: rem(40px);
+				right: rem(30px);
+				z-index: 1;
+				@media only screen and (max-width: 767px) {
+					top: rem(10px);	
+				}
+				@media only screen and (max-width: 479px) {
+					display: none;	
+				}
+			}
+			.share-icon {
+				position: absolute;
+				bottom: rem(25px);
+				right: rem(30px);
+				z-index: 1;
+				@media only screen and (max-width: 479px) {
+					display: none;	
+				}
+				a {
+					background-color: $color_light;
+					font-size: rem(12px);
+					font-weight: 600;
+					color: #696969;
+					border-radius: rem(3px);
+					padding: rem(3px 16px);
+					&:hover {
+						background-color: $color_primary;
+						color: $color_light;
+					}
+				}
+			}
+		}
+		.item-content {
+			.item-title {
+				font-weight: 700;
+				margin-bottom: 0;
+			}
+			.list-item {
+				margin-bottom: rem(15px);
+				li {
+					font-size: rem(15px);
+					padding-left: rem(20px);
+					position: relative;
+					margin-bottom: rem(5px);
+					&:before {
+						content: "";
+						height: rem(10px);
+						width: rem(10px);
+						background-color: #c4c4c4;
+						border-radius: 50%;
+						position: absolute;
+						left: 0;
+						top: rem(10px);
+					}
+				}
+			}
+		}
+	}
+}

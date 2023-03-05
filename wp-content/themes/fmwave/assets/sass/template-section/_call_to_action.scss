@@ -1,0 +1,61 @@
+/*------------------- 5.5 Call to Action -------------------*/
+.call-to-action {
+	.action-box {
+		transform: translateY(110px);
+		margin-top: rem(-110px);
+		position: relative;
+		background-color: $color_light;
+		display: flex;
+		align-items: center;
+		padding: rem(60px 130px 60px 50px);
+		z-index: 1;
+		box-shadow: rem(0px 0px 84px 0px) rgba(0, 0, 0, 0.05);
+		.item-title {
+			flex: 2;
+			margin-bottom: 0;
+			line-height: rem(50px);
+		}
+		.item-btn {
+			flex: 1;
+			
+			text-align: right;
+		}
+		&:after {
+			content: "\f109";
+			font-family: "Flaticon";
+			font-size: rem(150px);
+			color: rgba(0, 0, 0, 0.03);
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: rem(-50px);
+			z-index: -1;
+			transition-delay: 0.5s;
+			transition: all 0.5s ease-in-out;
+		}
+		@media only screen and (max-width: 991px) {
+			display: inherit;
+			text-align: center;
+			padding: rem(50px 60px);
+			.item-btn {
+				text-align: center;
+			}
+			.item-title {
+				margin-bottom: rem(25px);
+				line-height: 1.2;
+			}
+		}
+		@media only screen and (max-width: 575px) {
+			padding: rem(30px); 
+		}
+	}
+}
+
+
+.call-to-action.sal-animate {
+	.action-box {
+		&:after {
+			right: rem(70px);
+		}
+	}
+}

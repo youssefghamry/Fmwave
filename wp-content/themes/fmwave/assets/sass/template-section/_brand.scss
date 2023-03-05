@@ -1,0 +1,54 @@
+/*------------------- 5.4 Brand -------------------*/
+.brand-section {
+	background-image: url(../img/brand-banner-optimized.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: rem(70px 100px);
+	position: relative;
+	@media only screen and (max-width: 1199px) {
+		padding: rem(70px 0);
+	}
+	@media only screen and (max-width: 767px) {
+		padding: rem(60px 0);
+	}
+	&:before {
+		content: "";
+		height: 100%;
+		width: 100%;
+		background-color: rgba(236, 28, 36, 0.75);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.brand-box {
+		cursor: pointer;
+		padding: rem(30px);
+		text-align: center;
+	}
+}
+.brand-modern {
+	background-image: none;
+	background-color: #212020;
+	padding: rem(40px 100px 70px);
+	@media only screen and (max-width: 1199px) {
+		padding: rem(20px 15px 40px);
+
+	}
+	&:before {
+		display: none;
+	}
+	.brand-box {
+		img {
+			opacity: 0.2;
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover {
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}

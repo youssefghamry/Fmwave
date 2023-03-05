@@ -1,0 +1,123 @@
+/*------------------- 3.3 Countdown -------------------*/
+.rt-countdown-layout1 {
+	margin-bottom: rem(30px);
+	.fmwave-countdown {
+		display: flex;
+		flex-wrap: wrap;
+		font-family: $font_heading;
+		@media only screen and (max-width: 991px) {
+			justify-content: center;
+		}
+		.countdown-section {
+			line-height: 1;
+			margin-right: rem(60px);
+			margin-bottom: rem(30px);
+			@media only screen and (max-width: 1299px) {
+				margin-right: rem(40px);
+			}
+			@media only screen and (max-width: 767px) {
+				margin-right: 0;
+				min-width: rem(150px);
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			.countdown-number {
+				font-size: rem(28px);
+				font-weight: 700;
+				color: $color_light;
+				height: rem(90px);
+				width: rem(90px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: rem(3px) solid $color_primary;
+				border-top: none;
+				border-left: none;
+				border-radius: 50%;
+				margin: rem(0 auto 20px);
+			}
+			.countdown-unit {
+				font-size: rem(22px);
+				color: $color_light;
+				font-weight: 300;
+			}
+		}
+		.countdown-section >div {
+			text-align: center;
+
+		}
+	}
+}
+
+.rt-countdown-layout2 {
+	/* @dev- responsive check*/
+	.fmwave-countdown {
+		display: flex;
+		flex-wrap: wrap;
+		font-family: $font_heading;
+		@media only screen and (max-width: 991px) {
+			justify-content: center;
+		}
+		.countdown-section {
+			line-height: 1;
+			min-width: rem(110px);
+			margin-right: rem(50px);
+			position: relative;
+			@media only screen and (max-width: 1199px) {
+				margin-right: rem(30px);
+			}
+			@media only screen and (max-width: 767px) {
+				margin-right: 0;
+				margin-bottom: rem(30px);
+			}
+			&:after {
+				content: ":";
+				font-size: rem(50px);
+				color: $color_light;
+				position: absolute;
+				top: 0;
+				right: 0;
+				@media only screen and (max-width: 991px) {
+					font-size: rem(40px);
+					right: rem(-17px);
+				}
+				@media only screen and (max-width: 767px) {
+					right: rem(-5px);
+				}
+				@media only screen and (max-width: 575px) {
+					display: none;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+				&:after {
+					display: none;
+				}
+			}
+			.countdown-number {
+				font-size: rem(45px);
+				font-weight: 700;
+				color: $color_light;
+				margin: rem(0 auto 10px);
+				@media only screen and (max-width: 991px) {
+					font-size: rem(40px);
+				}
+				@media only screen and (max-width: 575px) {
+					font-size: rem(36px);
+				}
+			}
+			.countdown-unit {
+				color: $color_light;
+				font-weight: 300;
+			}
+		}
+		.countdown-section >div {
+			text-align: center;
+
+		}
+	}
+
+
+
+}

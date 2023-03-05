@@ -1,0 +1,69 @@
+/*------------------- 5.7 Contact -------------------*/
+.contact-method {
+	background-color: $color_primary;
+	padding: rem(60px 50px 70px);
+	border-radius: rem(3px);
+	@media only screen and (max-width: 991px) {
+		margin-bottom: rem(50px);
+	}
+	@media only screen and (max-width: 479px) {
+		padding: rem(50px 30px);
+		text-align: center;
+	}
+	.item-heading {
+		font-weight: 600;
+		color: $color_light;
+		font-size: rem(30px);
+		margin-bottom: rem(8px);
+		@media only screen and (max-width: 767px) {
+			font-size: rem(26px);
+		}
+	}
+	p {
+		color: $color_light;
+	}
+	.contact-list {
+		margin-top: rem(45px);
+	}
+	.media {
+		margin-bottom: rem(30px);
+		@media only screen and (max-width: 479px) {
+			display: block;
+
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.item-icon {
+			margin-top: rem(8px);
+			margin-right: rem(15px);
+			height: rem(70px);
+			width: rem(70px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: rem(1px) solid #e5e5e5;
+			border-radius: 50%;
+			@media only screen and (max-width: 479px) {
+				margin: rem(0 auto 20px);
+			}
+			i {
+				&:before {
+					font-size: rem(30px);
+					color: #e5e5e5;
+				}
+			}
+		}
+		.media-body {
+			.item-title {
+				color: $color_light;
+				margin-bottom: 0;
+				font-size: 22px;
+				font-weight: 500;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
